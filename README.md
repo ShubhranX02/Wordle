@@ -1,2 +1,2 @@
 # Wordle
-Wordle game
+Wordle!
