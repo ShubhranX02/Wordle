@@ -49,16 +49,16 @@ def word_check(word1: str, word2: str):
         if word1[i] == word2[i]:
             if word1.count(word2[i]) == 1:
                 rv.append(2)
-            elif word1.count(word2[i] == 2):
+            elif word1.count(word2[i]) == 2:
                 rv.append(4)
-            elif word1.count(word2[i] == 3):
+            elif word1.count(word2[i]) == 3:
                 rv.append(6)
         elif word2[i] in word1:
             if word1.count(word2[i]) == 1:
                 rv.append(1)
-            elif word1.count(word2[i] == 2):
+            elif word1.count(word2[i]) == 2:
                 rv.append(3)
-            elif word1.count(word2[i] == 3):
+            elif word1.count(word2[i]) == 3:
                 rv.append(5)
         else:
             rv.append(0)
@@ -181,11 +181,11 @@ while True:
                             elif match[index] == 2:
                                 box.color = [0, 255, 0]
                             elif match[index] == 3:
-                                box.color = [0, 255, 255]
+                                box.color = [255, 128, 0]
                             elif match[index] == 4:
                                 box.color = [0, 200, 0]
                             elif match[index] == 5:
-                                box.color = [0, 200, 200]
+                                box.color = [128, 64, 0]
                             elif match[index] == 6:
                                 box.color = [0, 100, 0]
                         words_guessed += 1
@@ -239,7 +239,7 @@ while True:
         )
         com3_box = (pygame.draw.rect(screen, (0, 100, 0), (width-130, 575, 25, 25)), 
         screen.blit(arial_very_small.render("Correct", False, (100, 100, 100)),(width-95, 570)), 
-        screen.blit(arial_very_small.render("Occurs Twice", False, (100, 100, 100)), (width-95, 585))
+        screen.blit(arial_very_small.render("Occurs Thrice", False, (100, 100, 100)), (width-95, 585))
         )
 
         if win:
